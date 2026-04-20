@@ -3,118 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wyspy Kanaryjskie - Twoje Miejsce na Ziemi</title>
+    <title>Berlin • Stolice Niemiec</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <style>
-        /* Stylizacja tła i ogólny wygląd */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #fff;
-            /* Ciekawe tło: Gradient nawiązujący do oceanu i zachodu słońca */
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                        url('https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?auto=format&fit=crop&w=1920&q=80');
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
-            line-height: 1.6;
+        body { font-family: 'Segoe UI', system-ui, sans-serif; }
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), 
+                        url('https://picsum.photos/id/1015/2000/1200') center/cover no-repeat;
         }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 50px 20px;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 3.5rem;
-            text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
-            margin-bottom: 10px;
-        }
-
-        .info-section {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            padding: 30px;
-            border-radius: 15px;
-            margin-bottom: 40px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        h2 {
-            color: #ffd700; /* Złoty kolor jak piasek */
-        }
-
-        .island-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            margin-top: 30px;
-        }
-
-        .island-link {
-            display: block;
-            padding: 20px;
-            background: rgba(0, 105, 148, 0.7); /* Oceaniczny błękit */
-            color: white;
-            text-decoration: none;
-            border-radius: 10px;
-            transition: all 0.3s ease;
-            font-weight: bold;
-            font-size: 1.2rem;
-            border: 2px solid transparent;
-        }
-
-        .island-link:hover {
-            background: #ffd700;
-            color: #333;
-            transform: translateY(-5px);
-            border: 2px solid #fff;
-        }
-
-        footer {
-            margin-top: 50px;
-            font-size: 0.9rem;
-            opacity: 0.8;
+        .card-hover:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
         }
     </style>
 </head>
-<body>
+<body class="bg-zinc-50">
 
-    <div class="container">
-        <header>
-            <h1>Wyspy Kanaryjskie</h1>
-            <p>Odkryj hiszpański raj na Oceanie Atlantyckim</p>
-        </header>
-
-        <section class="info-section">
-            <h2>Kilka słów o archipelagu</h2>
-            <p>
-                Wyspy Kanaryjskie to archipelag pochodzenia wulkanicznego, położony u wybrzeży Afryki, 
-                ale należący politycznie do Hiszpanii. Znane jako <strong>"Wyspy Wiecznej Wiosny"</strong>, 
-                oferują łagodny klimat przez cały rok, unikalne krajobrazy – od księżycowych pól lawy 
-                po gęste lasy wawrzynowe – oraz jedne z najpiękniejszych plaż na świecie.
-            </p>
-        </section>
-
-        <section>
-            <h2>Wybierz swoją wyspę:</h2>
-            <div class="island-grid">
-                <a href="teneryfa.html" class="island-link">Teneryfa</a>
-                <a href="fuerteventura.html" class="island-link">Fuerteventura</a>
-                <a href="gran-canaria.html" class="island-link">Gran Canaria</a>
-                <a href="lanzarote.html" class="island-link">Lanzarote</a>
-                <a href="la-palma.html" class="island-link">La Palma</a>
-                <a href="la-gomera.html" class="island-link">La Gomera</a>
-                <a href="el-hierro.html" class="island-link">El Hierro</a>
+    <!-- Navbar -->
+    <nav class="bg-red-700 text-white sticky top-0 z-50 shadow-xl">
+        <div class="max-w-7xl mx-auto px-8 py-5 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <i class="fas fa-bear text-4xl"></i>
+                <span class="text-3xl font-black tracking-tighter">BERLIN</span>
             </div>
-        </section>
+            <div class="flex gap-9 text-lg font-medium">
+                <a href="#ogolne" class="hover:text-yellow-300 transition">Ogólne</a>
+                <a href="#historia" class="hover:text-yellow-300 transition">Historia</a>
+                <a href="#dzisiaj" class="hover:text-yellow-300 transition">Dzisiaj</a>
+                <a href="#atrakcje" class="hover:text-yellow-300 transition">Atrakcje</a>
+                <a href="#ciekawostki" class="hover:text-yellow-300 transition">Ciekawostki</a>
+            </div>
+        </div>
+    </nav>
 
-        <footer>
-            <p>&copy; 2026 Przewodnik po Wyspach Kanaryjskich</p>
-        </footer>
-    </div>
+    <!-- Hero Section -->
+    <header id="hero" class="hero h-screen flex items-center text-white">
+        <div class="max-w-5xl mx-auto text-center px-6">
+            <h1 class="text-7xl md:text-8xl font-black tracking-tighter mb-4">BERLIN</h1>
+            <p class="text-4xl md:text-5xl font-light mb-10">Miasto, które zmieniło historię Europy</p>
+            <a href="#ogolne" 
+               class="inline-block bg-yellow-400 hover:bg-yellow-300 text-black font-bold text-2xl px-12 py-6 rounded-full transition-all duration-300">
+                Odkryj Berlin →
+            </a>
+        </div>
+    </header>
 
-</body>
-</html>
+    <!-- Sekcja 1 -->
+    <section id="ogolne" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-8">
+            <h2 class="text-5xl font-bold text-center mb-16 text-red-700">Berlin w pigułce</h2>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="text-center card-hover bg-white p-10 rounded-3xl shadow-lg transition-all">
+                    <div class="text-7xl mb-6">🏛️</div>
+                    <h3 class="text-3xl font-bold mb-3">3,8 miliona</h3>
+                    <p class="text-xl text-gray-600">mieszkańców</p>
+                </div>
+                <div class="text-center card-hover bg-white p-10 rounded-3xl shadow-lg transition-all">
+                    <div class="text-7xl mb-6">📍</div>
+                    <h3 class="text-3xl font-bold mb-3">892 km²</h3>
+                    <p class="text-xl text-gray-600">12 dzielnic • Miasto-państwo</p>
+                </div>
+                <div class="text-center card-hover bg-white p-10 rounded-3xl shadow-lg transition-all">
+                    <div class="text-7xl mb-6">🌍</div>
+                    <h3 class="text-3xl font-bold mb-3">190+ krajów</h3>
+                    <p class="text-xl text-gray-600">Najbardziej multikulturowe miasto Europy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Historia -->
+    <section id="historia" class="py-24 bg-zinc-100">
+        <div class="max-w-6xl mx-auto px-8">
+            <h2 class="text-5xl font-bold text-center mb-16 text-red-700">Historia w skrócie</h2>
+            <div class="relative border-l-4 border-red-700 pl-10 max-w-3xl mx-auto space-y-16">
+                <div>
+                    <div class="absolute -left-3 w-6 h-6 bg-red-700 rounded-full"></div>
+                    <h3 class="text-2xl font-bold">1237</h3>
+                    <p class="text-lg">Założenie Berlina i Cölln</p>
+                </div>
+                <div>
+                    <div class="absolute -left-3 w-6 h-6 bg-red-700 rounded-full"></div>
+                    <h3 class="text-2xl font-bold">1961 – 1989</h3>
+                    <p class="text-lg">Miasto podzielone Murem Berlińskim</p>
+                </div>
+                <div>
+                    <div class="absolute -left-3 w-6 h-6 bg-red-700 rounded-full"></div>
+                    <h3 class="text-2xl font-bold">9 listopada 1989</h3>
+                    <p class="text-lg font-semibold text-red-600">Upadek Muru Berlińskiego</p>
+                </div>
+                <div>
+                    <div class="absolute -left-3 w-6 h-6 bg-red-700 rounded-full"></div>
+     

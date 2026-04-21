@@ -169,9 +169,13 @@
                 </div>
             </div> </div> </section>
 
-    <footer class="bg-zinc-900 text-white py-16 text-center px-6 mt-auto"> <p class="text-3xl font-bold mb-4">Berlin 2026</p>
-        <p class="text-zinc-400">Strona edukacyjna przygotowana do gazetki szkolnej</p>
-    </footer>
-
+<footer class="bg-zinc-900 text-white py-16 text-center px-6 mt-auto">
+    <p class="text-3xl font-bold mb-4">Berlin <span id="current-year"></span></p>
+    <p class="text-zinc-400">Strona edukacyjna przygotowana do gazetki szkolnej</p>
+</footer>
+<script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
 </body>
 </html>

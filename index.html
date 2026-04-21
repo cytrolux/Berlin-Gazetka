@@ -3,169 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Berlin – Stolice Niemiec | Strona edukacyjna</title>
+    <title>Berlin • Miasto Wolności</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <style>
         body { font-family: 'Segoe UI', system-ui, sans-serif; }
-        .hero-bg { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/id/1015/1920/1080') center/cover no-repeat; }
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), 
+                        url('https://picsum.photos/id/1015/2000/1200') center/cover no-repeat;
+            min-height: 100vh;
+        }
     </style>
 </head>
-<body class="bg-gray-50">
+<body class="bg-zinc-50">
 
-    <!-- NAV -->
+    <!-- Navbar -->
     <nav class="bg-red-700 text-white sticky top-0 z-50 shadow-lg">
-        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+        <div class="max-w-7xl mx-auto px-5 py-4 flex justify-between items-center">
             <div class="flex items-center gap-3">
                 <i class="fas fa-bear text-3xl"></i>
-                <h1 class="text-2xl font-bold">BERLIN</h1>
+                <span class="text-2xl font-black">BERLIN</span>
             </div>
-            <div class="flex gap-8 text-lg">
-                <a href="#ogolne" class="hover:text-yellow-300">Ogólne info</a>
+            <div class="flex gap-5 text-sm font-medium">
+                <a href="#ogolne" class="hover:text-yellow-300">Start</a>
                 <a href="#historia" class="hover:text-yellow-300">Historia</a>
-                <a href="#dzisiaj" class="hover:text-yellow-300">Berlin dzisiaj</a>
+                <a href="#dzisiaj" class="hover:text-yellow-300">Dzisiaj</a>
                 <a href="#atrakcje" class="hover:text-yellow-300">Atrakcje</a>
-                <a href="#ciekawostki" class="hover:text-yellow-300">Ciekawostki</a>
             </div>
         </div>
     </nav>
 
-    <!-- HERO -->
-    <header id="hero" class="hero-bg h-screen flex items-center text-white">
-        <div class="max-w-4xl mx-auto text-center px-6">
-            <h1 class="text-7xl md:text-8xl font-black mb-4 tracking-tight">BERLIN</h1>
-            <p class="text-4xl md:text-5xl font-light mb-8">Stolica Niemiec i serce Europy</p>
-            <a href="#ogolne" class="inline-block bg-yellow-400 hover:bg-yellow-300 text-black font-bold text-2xl px-10 py-5 rounded-full transition">
-                Poznaj Berlin →
+    <!-- Hero -->
+    <header id="hero" class="hero flex items-center text-white">
+        <div class="max-w-2xl mx-auto text-center px-6 pt-20">
+            <h1 class="text-5xl md:text-7xl font-black tracking-tighter mb-6">BERLIN</h1>
+            <p class="text-2xl md:text-4xl font-light mb-10">Miasto, które zmieniło bieg historii Europy</p>
+            <a href="#ogolne" class="inline-block bg-yellow-400 hover:bg-yellow-300 text-black font-bold text-xl px-10 py-6 rounded-full transition">
+                Poznaj Berlin ↓
             </a>
         </div>
     </header>
 
-    <!-- SEKCJA 1: OGÓLNE -->
-    <section id="ogolne" class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-5xl font-bold text-center mb-16 text-red-700">Berlin w pigułce</h2>
-            <div class="grid md:grid-cols-3 gap-10">
-                <div class="text-center">
-                    <div class="text-6xl mb-4">🏛️</div>
-                    <h3 class="text-2xl font-bold mb-2">Stolica od 1871</h3>
-                    <p class="text-lg">Największe miasto Niemiec – 3,8 miliona mieszkańców</p>
+    <!-- Ogólne -->
+    <section id="ogolne" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-red-700">Berlin w pigułce</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="text-center p-6 rounded-3xl bg-zinc-100">
+                    <div class="text-5xl mb-3">👥</div>
+                    <h3 class="text-3xl font-bold">3 850 000</h3>
+                    <p>mieszkańców</p>
                 </div>
-                <div class="text-center">
-                    <div class="text-6xl mb-4">📏</div>
-                    <h3 class="text-2xl font-bold mb-2">892 km²</h3>
-                    <p class="text-lg">12 dzielnic (Bezirke) i miasto-państwo</p>
+                <div class="text-center p-6 rounded-3xl bg-zinc-100">
+                    <div class="text-5xl mb-3">📍</div>
+                    <h3 class="text-3xl font-bold">892 km²</h3>
+                    <p>powierzchnia</p>
                 </div>
-                <div class="text-center">
-                    <div class="text-6xl mb-4">🌍</div>
-                    <h3 class="text-2xl font-bold mb-2">Multikulturowy</h3>
-                    <p class="text-lg">Ludzie z ponad 190 krajów</p>
+                <div class="text-center p-6 rounded-3xl bg-zinc-100">
+                    <div class="text-5xl mb-3">🏙️</div>
+                    <h3 class="text-3xl font-bold">12</h3>
+                    <p>dzielnic</p>
+                </div>
+                <div class="text-center p-6 rounded-3xl bg-zinc-100">
+                    <div class="text-5xl mb-3">🌍</div>
+                    <h3 class="text-3xl font-bold">190+</h3>
+                    <p>narodowości</p>
                 </div>
             </div>
+            <p class="mt-12 text-lg text-gray-700 text-center max-w-3xl mx-auto">
+                Berlin to największe miasto Niemiec i jednocześnie jedno z 16 landów federalnych. Jest symbolem zjednoczenia Niemiec, tolerancji i kreatywności.
+            </p>
         </div>
     </section>
 
-    <!-- SEKCJA 2: HISTORIA -->
-    <section id="historia" class="py-20 bg-gray-100">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-5xl font-bold text-center mb-16 text-red-700">Historia Berlina w skrócie</h2>
-            <div class="space-y-12">
-                <div class="flex flex-col md:flex-row gap-8 items-center">
-                    <div class="md:w-1/2">
-                        <h3 class="text-3xl font-bold mb-4">1237 – Początki</h3>
-                        <p class="text-lg">Założony jako dwie słowiańskie osady: Berlin i Cölln.</p>
-                    </div>
-                    <div class="md:w-1/2 bg-white p-8 rounded-3xl shadow">
-                        <p class="text-2xl font-light">XVIII w. – stolica Królestwa Prus<br>1871 – stolica Cesarstwa Niemieckiego</p>
-                    </div>
-                </div>
-                <div class="text-center text-5xl font-light text-gray-400">↓</div>
-                <div class="flex flex-col md:flex-row gap-8 items-center">
-                    <div class="md:w-1/2 bg-white p-8 rounded-3xl shadow">
-                        <p class="text-2xl font-light">1945 – zniszczony w 70%<br>1961 – wzniesienie Muru Berlińskiego</p>
-                    </div>
-                    <div class="md:w-1/2">
-                        <h3 class="text-3xl font-bold mb-4">1989–1990 – Zjednoczenie</h3>
-                        <p class="text-lg">9 listopada 1989 – Upadek Muru<br>3 października 1990 – oficjalne zjednoczenie Niemiec</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SEKCJA 3: BERLIN DZISIAJ -->
-    <section id="dzisiaj" class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-5xl font-bold text-center mb-16 text-red-700">Berlin dzisiaj</h2>
-            <div class="grid md:grid-cols-2 gap-12">
+    <!-- Historia -->
+    <section id="historia" class="py-16 bg-zinc-100">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-red-700">Historia Berlina</h2>
+            <div class="space-y-10 text-lg leading-relaxed text-gray-700">
                 <div>
-                    <h3 class="text-3xl font-bold mb-6">Gospodarka i kultura</h3>
-                    <ul class="space-y-4 text-lg">
-                        <li class="flex items-start gap-3"><span class="text-green-600 text-2xl">✓</span> Lider IT, mediów, biotechnologii i designu</li>
-                        <li class="flex items-start gap-3"><span class="text-green-600 text-2xl">✓</span> Ponad 35 milionów turystów rocznie</li>
-                        <li class="flex items-start gap-3"><span class="text-green-600 text-2xl">✓</span> 9 uniwersytetów (m.in. prestiżowy Uniwersytet Humboldt z 1810 rg.)</li>
-                        <li class="flex items-start gap-3"><span class="text-green-600 text-2xl">✓</span> Jedno z najzielenszych miast Europy (1/3 powierzchni to parki i woda)</li>
-                    </ul>
+                    <h3 class="font-bold text-xl mb-2">1237 rok</h3>
+                    <p>Założenie dwóch osad słowiańskich – Berlin i Cölln nad rzeką Szprewą. Początek historii miasta.</p>
                 </div>
-                <div class="bg-red-50 p-10 rounded-3xl">
-                    <h3 class="text-3xl font-bold mb-6">Życie nocne i kreatywność</h3>
-                    <p class="text-xl leading-relaxed">Berlin to światowa stolica klubów, street artu i alternatywnej sceny artystycznej. Miasto nigdy nie śpi.</p>
+                <div>
+                    <h3 class="font-bold text-xl mb-2">XVIII–XIX wiek</h3>
+                    <p>Berlin staje się stolicą Królestwa Prus, a później – w 1871 roku – stolicą zjednoczonych Niemiec. Miasto przeżywa ogromny rozwój przemysłowy i naukowy.</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SEKCJA 4: ATRAKCJE -->
-    <section id="atrakcje" class="py-20 bg-gray-100">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-5xl font-bold text-center mb-16 text-red-700">Najważniejsze atrakcje</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-3xl overflow-hidden shadow hover:shadow-xl transition">
-                    <div class="h-64 bg-[url('https://picsum.photos/id/1016/800/600')] bg-cover"></div>
-                    <div class="p-8">
-                        <h4 class="font-bold text-2xl mb-2">Brama Brandenburska</h4>
-                        <p class="text-gray-600">Symbol zjednoczenia Niemiec</p>
-                    </div>
+                <div class="bg-red-50 p-8 rounded-3xl border-l-4 border-red-700">
+                    <h3 class="font-bold text-xl mb-3">II wojna światowa</h3>
+                    <p>W 1945 roku Berlin był prawie całkowicie zniszczony – ponad 70% zabudowy legło w gruzach. Po wojnie miasto zostało podzielone na cztery strefy okupacyjne.</p>
                 </div>
-                <div class="bg-white rounded-3xl overflow-hidden shadow hover:shadow-xl transition">
-                    <div class="h-64 bg-[url('https://picsum.photos/id/133/800/600')] bg-cover"></div>
-                    <div class="p-8">
-                        <h4 class="font-bold text-2xl mb-2">East Side Gallery</h4>
-                        <p class="text-gray-600">1,3 km najdłuższego fragmentu Muru z muralami</p>
-                    </div>
+                <div>
+                    <h3 class="font-bold text-xl mb-2">1961 – 1989</h3>
+                    <p>Budowa Muru Berlińskiego (13 sierpnia 1961) podzieliła miasto na część wschodnią i zachodnią na 28 lat. Mur stał się największym symbolem zimnej wojny.</p>
                 </div>
-                <div class="bg-white rounded-3xl overflow-hidden shadow hover:shadow-xl transition">
-                    <div class="h-64 bg-[url('https://picsum.photos/id/201/800/600')] bg-cover"></div>
-                    <div class="p-8">
-                        <h4 class="font-bold text-2xl mb-2">Wieża Telewizyjna + Tiergarten</h4>
-                        <p class="text-gray-600">Panorama miasta i największy park w centrum</p>
-                    </div>
+                <div>
+                    <h3 class="font-bold text-xl mb-2">9 listopada 1989</h3>
+                    <p class="font-semibold text-red-600">Upadek Muru Berlińskiego – jedno z najważniejszych wydarzeń XX wieku. Miliony ludzi świętowały na ulicach.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-xl mb-2">3 października 1990</h3>
+                    <p>Oficjalne zjednoczenie Niemiec. Berlin ponownie staje się stolicą całego kraju.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SEKCJA 5: CIEKAWOSTKI -->
-    <section id="ciekawostki" class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-5xl font-bold text-center mb-16 text-red-700">Ciekawostki, które musisz znać!</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="flex gap-4"><i class="fas fa-bridge text-4xl text-yellow-500"></i><div><strong>1800 mostów</strong> – więcej niż w Wenecji!</div></div>
-                <div class="flex gap-4"><i class="fas fa-pizza text-4xl text-yellow-500"></i><div><strong>Currywurst</strong> – najsłynniejsza berlińska kiełbasa</div></div>
-                <div class="flex gap-4"><i class="fas fa-paint-brush text-4xl text-yellow-500"></i><div><strong>Street art</strong> na każdym kroku</div></div>
-                <div class="flex gap-4"><i class="fas fa-tree text-4xl text-yellow-500"></i><div><strong>1/3 powierzchni</strong> to zieleń i woda</div></div>
-                <div class="flex gap-4"><i class="fas fa-bear text-4xl text-yellow-500"></i><div><strong>Niedźwiedź</strong> – symbol miasta od średniowiecza</div></div>
-                <div class="flex gap-4"><i class="fas fa-film text-4xl text-yellow-500"></i><div><strong>Berlinale</strong> – jeden z najważniejszych festiwali filmowych świata</div></div>
+    <!-- Berlin dzisiaj -->
+    <section id="dzisiaj" class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-red-700">Berlin dzisiaj</h2>
+            <div class="prose prose-lg text-gray-700">
+                <p>Berlin jest jednym z najszybciej rozwijających się miast Europy. Przyciąga młodych ludzi z całego świata dzięki dynamicznej scenie startupowej, niskim kosztom życia i otwartej, kreatywnej atmosferze.</p>
+                <p>Miasto jest prawdziwą stolicą kultury i sztuki – ma ponad 170 muzeów, setki galerii, 3 opery i słynny festiwal filmowy Berlinale. Jest też uznawane za światową stolicę klubów i życia nocnego.</p>
+                <p class="bg-amber-50 p-8 rounded-3xl my-8">
+                    <strong>Berlin jest zielony!</strong><br>
+                    Prawie jedna trzecia powierzchni miasta to parki, lasy, jeziora i tereny rekreacyjne. Największy park w centrum to Tiergarten – dawny teren łowiecki królów Prus.
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- STOPKA -->
-    <footer class="bg-red-700 text-white py-12">
-        <div class="max-w-6xl mx-auto px-6 text-center">
-            <p class="text-xl">Przygotowano w szkole • 2026</p>
-            <p class="mt-4">Strona stworzona na podstawie gazetki szkolnej o Berlinie</p>
+    <!-- Atrakcje -->
+    <section id="atrakcje" class="py-16 bg-zinc-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-red-700">Najważniejsze atrakcje</h2>
+            <div class="space-y-10">
+                <div class="flex flex-col md:flex-row gap-6 bg-white rounded-3xl overflow-hidden shadow">
+                    <img src="https://picsum.photos/id/1016/800/500" class="w-full md:w-1/2 h-64 object-cover">
+                    <div class="p-8">
+                        <h3 class="font-bold text-2xl mb-3">Brama Brandenburska</h3>
+                        <p class="text-lg">Najbardziej znany symbol Berlina i zjednoczonych Niemiec. Miejsce wielkich historycznych wydarzeń.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row gap-6 bg-white rounded-3xl overflow-hidden shadow">
+                    <img src="https://picsum.photos/id/133/800/500" class="w-full md:w-1/2 h-64 object-cover">
+                    <div class="p-8">
+                        <h3 class="font-bold text-2xl mb-3">East Side Gallery</h3>
+                        <p class="text-lg">Najdłuższy zachowany fragment Muru Berlińskiego (1,3 km) pokryty wspaniałymi muralami.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row gap-6 bg-white rounded-3xl overflow-hidden shadow">
+                    <img src="https://picsum.photos/id/201/800/500" class="w-full md:w-1/2 h-64 object-cover">
+                    <div class="p-8">
+                        <h3 class="font-bold text-2xl mb-3">Wieża Telewizyjna</h3>
+                        <p class="text-lg">368 metrów wysokości. Z tarasu widokowego roztacza się niesamowita panorama całego Berlina.</p>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
+
+    <!-- Stopka -->
+    <footer class="bg-zinc-900 text-white py-16 text-center px-6">
+        <p class="text-3xl font-bold mb-4">Berlin 2026</p>
+        <p class="text-zinc-400">Strona edukacyjna przygotowana do gazetki szkolnej</p>
     </footer>
 
 </body>
